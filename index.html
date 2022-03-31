@@ -4,8 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>e-CARE</title>
-    <meta name="description"
-        content="a New Dataset for Exploring Explainable Causal Reasoning">
+    <meta name="description" content="a New Dataset for Exploring Explainable Causal Reasoning">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta property="og:image" content="/logo.png">
@@ -18,25 +17,9 @@
     <script async="" src="./e-CARE_files/analytics.js"></script>
     <script async="" defer="" src="./e-CARE_files/buttons.js"></script>
     <script src="./e-CARE_files/analytics(1).js"></script>
-    <style class="mpa-style-fix ImageGatherer">
-        .FotorFrame {
-            position: fixed !important
-        }
-    </style>
-    <style class="mpa-style-fix SideFunctionPanel">
-        .weui-desktop-online-faq__wrp {
-            top: 350px !important;
-            bottom: unset !important
-        }
-
-        .weui-desktop-online-faq__wrp .weui-desktop-online-faq__switch {
-            width: 50px !important
-        }
-    </style>
-    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./e-CARE_files/translateelement.css">
 </head>
 
-<body mpa-version="8.0.1" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg">
+<body>
     <div class="navbar navbar-default navbar-fixed-top" id="topNavbar" role="navigation">
         <div class="container clearfix" id="navContainer">
             <div class="rightNav">
@@ -49,7 +32,7 @@
                     <a class="navbar-brand" href="https://github.com/Waste-Wood/e-CARE/"><span
                             class="record">e-CARE</span>
                     </a>
-                        </div>
+                </div>
             </div>
         </div>
     </div>
@@ -66,7 +49,7 @@
     <div class="cover" id="contentCover">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="infoCard">
                         <div class="infoBody">
                             <div class="infoHeadline">
@@ -75,11 +58,11 @@
                             <p></p>
                             <ul class="ulNews">
                                 <li class="liNews"><span class="Newsdate">02/15/2022</span>
-                                    <span class="record">Co</span>Dataset is now public available！
+                                    <span class="record" e-CARE</span>Dataset is now public available！
                                     </span>
                                 </li>
                                 <li class="liNews"><span class="Newsdate">02/15/2022</span>
-                                    <span class="record">Co</span>e-CARE is now public available！
+                                    <span class="record">e-CARE</span> is now public available！
                                     </span>
                                 </li>
 
@@ -116,153 +99,234 @@
                                 </li>
                             </ul>
                             <div class="infoHeadline">
+                                <h2>Evaluation Scripts</h2>
+                            </div>
+
+                            <p>We provide two evaluation scripts for obtaining evaluation metrics on dev and test sets.
+                                <a href="https://github.com/Waste-Wood/e-CARE/">
+                                    The format of prediction files can refer to github
+                                </a>
+                                <li><a
+                                        href="https://github.com/Waste-Wood/e-CARE/releases/download/Scripts/causal_reasoning.py">
+                                        Causal reasoning
+                                    </a></li>
+                                <li><a
+                                        href="https://github.com/Waste-Wood/e-CARE/releases/download/Scripts/conceptual_explanation_generation.py">
+                                        Conceptual Explanation Generation
+                                    </a></li>
+                            </p>
+                            <p></p>
+                            <div class="infoHeadline">
                                 <h2>License</h2>
                             </div>
 
                             <p>
                                 <li><a href="https://github.com/Waste-Wood/e-CARE/blob/main/LICENSE">License:<span
-                                            class="record">e-CARE</span>is under the MIT License</a></li>
+                                            class="record">e-CARE</span> is under the MIT License</a></li>
                             </p>
                             <p></p>
                             <div class="infoHeadline">
                                 <h2>Have Questions?</h2>
                             </div>
-                            <p>Ask us questions at our <a
-                                    href="mailto:ldu@ir.hit.edu.cn">ldu@ir.hit.edu.cn</a> or at <a
+                            <p>Ask us questions at our <a href="mailto:ldu@ir.hit.edu.cn">ldu@ir.hit.edu.cn</a> or at <a
                                     href="mailto:kxiong@ir.hit.edu.cn">kxiong@ir.hit.edu.cn</a>.</p>
-                           
+
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="infoCard">
                         <div class="infoBody">
-                            <div class="infoHeadline">
-                                <h2>Causal Reasoning </h2>
-                            </div>
-                            <table class="table performanceTable">
-                                <tbody>
-                                    <tr>
-                                        <th>Rank</th>
-                                        <th>Model</th>
-                                        <th>Test</th>
+                            <table class="table performanceTable"  cellpadding=0 cellspacing=0
+                                style="width:100% ;height:100%">
+                                <div class="infoHeadline">
+                                    <h2>Causal Reasoning </h2>
+                                </div>
+                                <td style="width:100%;" align="center" valign="middle">
+                                    <table style="margin:auto" border=0>
+                                        
+                                            <tr>
+                                                <th>Rank</th>
+                                                <th>Model</th>
+                                                <th>Accuracy (%)</th>
+                                            </tr>
+                                                <tr class="human-row">
+                                                    <td></td>
+                                                    <td>Human Performance<p class="institution">HIT-SCIR</p>
+                                                        <p nowrap>(Du et al. '22)</p>
+                                                    </td>
+                                                    <td>92</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>1</p><span class="date label label-default">Mar 15,
+                                                            2022</span>
+                                                    </td>
+
+                                                    <td style="word-break:break-word;">BERT-base-cased
+                                                        <p class="institution">HIT
+                                                            [modification of the
+                                                            Google AI implementation]</a>
+                                                        </p>
+                                                        <font color="blue">https://aclanthology.org/N19-1423/</font>
+                                                    </td>
+                                                    <td>75.38</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2</p><span class="date label label-default">Mar 15,
+                                                            2022</span>
+                                                    </td>
+                                                    <td style="word-break:break-word;">ALBERT<p class="institution">
+                                                            HIT [modification of the
+                                                            Google Research implementation]</p>
+                                                        <font color="blue">https://arxiv.org/abs/1909.11942</font>
+                                                    </td>
+                                                    <td>74.60</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>3</p><span class="date label label-default">Mar 15,
+                                                            2022</span>
+                                                    </td>
+                                                    <td style="word-break:break-word;">XLNet-base-cased<p
+                                                            class="institution">
+                                                            HIT [modification of the Google Brain implementation]
+                                                        </p>
+                                                        <font color="blue">
+                                                            https://proceedings.neurips.cc/paper/2019/hash/dc6a7e655d7e5840e66733e9ee67cc69-Abstract.html
+                                                        </font>
+                                                    </td>
+                                                    <td>74.58</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>4</p><span class="date label label-default">Mar 15,
+                                                            2022</span>
+                                                    </td>
+                                                    <td style="word-break:break-word;">BART-base<p class="institution">
+                                                            HIT
+                                                            [modification
+                                                            of the Facebook AI implementation]</p>
+                                                        <font color="blue">
+                                                            https://aclanthology.org/2020.acl-main.703/</font>
+                                                    </td>
+                                                    <td>71.65</td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>
+                                                        <p>5</p><span class="date label label-default">Mar 15,
+                                                            2022</span>
+                                                    </td>
+                                                    <td style="word-break:break-word;">RoBERTa-base<p
+                                                            class="institution"> HIT [modification of the
+                                                            Facebook AI implementation]</p>
+                                                        <font color="blue">https://arxiv.org/abs/1907.11692</font>
+                                                    </td>
+                                                    <td>70.73</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>6</p><span class="date label label-default">Mar 15,
+                                                            2022</span>
+                                                    </td>
+                                                    <td style="word-break:break-word;">GPT-2<p class="institution">
+                                                            HIT [modification of the OpenAI implementation]</p>
+                                                        <font color="blue">
+                                                            http://www.persagen.com/files/misc/radford2019language.pdf
+                                                        </font>
+                                                    </td>
+                                                    <td>69.51</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <p>7</p><span class="date label label-default">Mar 15,
+                                                            2022</span>
+                                                    </td>
+                                                    <td style="word-break:break-word;">GPT<p class="institution">
+                                                            HIT [modification of the OpenAI implementation]</p>
+                                                        <font color="blue">
+                                                            https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdff
+                                                        </font>
+
+                                                    </td>
+                                                    <td>68.15</td>
+                                                </tr>
+                                            
+                                        </table>
+                                </td>
                                     </tr>
-                                    <tr class="human-row">
-                                        <td></td>
-                                        <td>Human Performance</td>
-                                        <td>97</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>1</p><span class="date label label-default">Mar 15, 2022</span>
-                                        </td>
-                                        <td style="word-break:break-word;">Bert-base-cased
-                                        </td>
-                                        <td>75.38</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>2</p><span class="date label label-default">Mar 15, 2022</span>
-                                        </td>
-                                        <td style="word-break:break-word;">ALBERT
-                                        </td>
-                                        <td>74.60</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>3</p><span class="date label label-default">Mar 15, 2022</span>
-                                        </td>
-                                        <td style="word-break:break-word;">XLNet-base-cased	
-                                        </td>
-                                        <td>74.58</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>4</p><span class="date label label-default">Mar 15, 2022</span>
-                                        </td>
-                                        <td style="word-break:break-word;">Bart-base
-                                        </td>
-                                        <td>71.65</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>5</p><span class="date label label-default">Mar 15, 2022</span>
-                                        </td>
-                                        <td style="word-break:break-word;">RoBERTa-base
-                                        </td>
-                                        <td>70.73</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>6</p><span class="date label label-default">Mar 15, 2022</span>
-                                        </td>
-                                        <td style="word-break:break-word;">GPT-2
-                                        </td>
-                                        <td>69.51</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>7</p><span class="date label label-default">Mar 15, 2022</span>
-                                        </td>
-                                        <td style="word-break:break-word;">GPT
-                                        </td>
-                                        <td>68.15</td>
-                                    </tr>
-                                </tbody>
                             </table>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4">
+
                     <div class="infoCard">
                         <div class="infoBody">
-                            <div class="infoHeadline">
-                                <h2>Conceptual Explanation Generation </h2>
-                            </div>
-                            <table class="table performanceTable">
-                                <tbody>
-                                    <tr>
-                                        <th>Rank</th>
-                                        <th>Model</th>
-                                        <th><nobr>BLEU</nobr></th>
-                                        <th><nobr>Rouge-l</nobr></th>
-                                    </tr>
-                                    <tr class="human-row">
-                                        <td></td>
-                                        <td>Human Performance</td>
-                                        <td>91.31</td>
-                                        <td>91.69</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>1</p><span class="date label label-default">Mar 15, 2022</span>
-                                        </td>
-                                        <td style="word-break:break-word;">GPT-2
-                                        </td>
-                                        <td>32.56</td>
-                                        <td>32.05</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>2</p><span class="date label label-default">Mar 15, 2022</span>
-                                        </td>
-                                        <td style="word-break:break-word;">RNN
-                                        </td>
-                                        <td>18.09</td>
-                                        <td>20.85</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>3</p><span class="date label label-default">Mar 15, 2022</span>
-                                        </td>
-                                        <td style="word-break:break-word;">Multi-Task
-                                        </td>
-                                        <td>35.28</td>
-                                        <td>34.88</td>
-                                    </tr>
-                                 
-                                </tbody>
+
+                            <table class="table performanceTable" cellpadding=0 cellspacing=0
+                                style="width:100% ;height:100%">
+                                <div class="infoHeadline">
+                                    <h2>Conceptual Explanation Generation </h2>
+                                </div>
+                                <tr>
+                                    <td style="width:100%;" align="center" valign="middle">
+                                        <table style="margin:auto">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Rank</th>
+                                                    <th>Model</th>
+                                                    <th>
+                                                        <nobr>BLEU</nobr>
+                                                    </th>
+                                                    <th>
+                                                        <nobr>Rouge-l</nobr>
+                                                    </th>
+                                                </tr>
+                                                <tr class="human-row">
+                                                    <td></td>
+                                                    <td>Human Performance<p class="institution">HIT-SCIR</p>
+                                                        <p nowrap>(Du et al. '22)</p>
+                                                    </td>
+                                                    <td>91.31</td>
+                                                    <td>91.69</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>1</p><span class="date label label-default">Mar 15,
+                                                            2022</span>
+                                                    </td>
+                                                    <td style="word-break:break-word;">GPT-2<p class="institution">
+                                                            HIT [modification of the OpenAI implementation]</p>
+                                                        <font color="blue">
+                                                            http://www.persagen.com/files/misc/radford2019language.pdf
+                                                        </font>
+                                                    </td>
+                                                    <td>32.56</td>
+                                                    <td>32.05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2</p><span class="date label label-default">Mar 15,
+                                                            2022</span>
+                                                    </td>
+                                                    <td style="word-break:break-word;">RNN<p class="institution">
+                                                            HIT [modification of the LSTM]</p>
+                                                        <font color="blue">
+                                                            https://link.springer.com/chapter/10.1007/978-3-642-24797-2_4
+                                                        </font>
+                                                    </td>
+                                                    <td>18.09</td>
+                                                    <td>20.85</td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
                             </table>
                         </div>
                     </div>
@@ -273,6 +337,7 @@
     </div>
     <nav class="navbar navbar-default navbar-static-bottom footer">
         <div class="container clearfix">
+
             <div class="rightNav">
                 <div>
                     <ul class="nav navbar-nav navbar-right">
@@ -285,8 +350,8 @@
             </div>
         </div>
     </nav>
-  
-    
+
+
 </body>
 
 </html>
