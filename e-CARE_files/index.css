@@ -133,11 +133,11 @@ pre {
   font-size: 14px;
 }
 #contentCover .performanceTable {
-  margin: 10px 0px;
+  margin: 0px;
 }
 #contentCover .performanceTable .institution {
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
 }
 #contentCover .performanceTable .date {
   font-weight: normal;
@@ -148,13 +148,21 @@ pre {
 #contentCover .performanceTable td,
 #contentCover .performanceTable th {
   text-align: center;
-  max-width: 250px;
+  max-width: 300px;
 }
 #contentCover ul.list-inline {
-  margin-left: 0px;
+  margin-left: 5px;
   text-align: center;
 }
 #contentCover ul.list-inline li {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.ext-box {
+  display: table;
+}
+.in-box {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
