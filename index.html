@@ -49,7 +49,7 @@
     <div class="cover" id="contentCover">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <div class="infoCard">
                         <div class="infoBody">
                             <div class="infoHeadline">
@@ -57,10 +57,6 @@
                             </div>
                             <p></p>
                             <ul class="ulNews">
-                                <li class="liNews"><span class="Newsdate">02/15/2022</span>
-                                    <span class="record" e-CARE</span>Dataset is now public available！
-                                    </span>
-                                </li>
                                 <li class="liNews"><span class="Newsdate">02/15/2022</span>
                                     <span class="record">e-CARE</span> is now public available！
                                     </span>
@@ -89,13 +85,26 @@
                             <p>Download a copy of the dataset in jsonl format:</p>
                             <ul class="list-unstyled">
                                 <li><a class="btn actionBtn inverseBtn"
-                                        href="https://github.com/Waste-Wood/e-CARE/files/8242580/e-CARE.zip">Data
-                                        Set (3.2 MB)</a></li>
+                                        href="https://github.com/Waste-Wood/e-CARE/files/8242580/e-CARE.zip">DataSet
+                                        (3.2 MB)</a></li>
                             </ul>
                             <p>Read the following Readme to get familiar with the data structure.</p>
                             <ul class="list-unstyled">
                                 <li><a class="btn actionBtn inverseBtn"
                                         href="https://github.com/Waste-Wood/e-CARE/">Readme</a>
+                                </li>
+                            </ul>
+                            <div class="infoHeadline">
+                                <h2>Submissiong Guideline</h2>
+                            </div>
+                            <p>The test set of e-CARE is a blind set, you should the following
+                                instruction to get the performace on test set. And the submitted models will be added to
+                                the leaderboard with the premission of the author.</p>
+                            <p>Submission Tutorial</p>
+                            <ul class="list-unstyled">
+                                <li><a class="btn actionBtn inverseBtn"
+                                        href="https://github.com/Waste-Wood/e-CARE/blob/main/Submission%20Tutorial.md">Submission
+                                        Tutorial</a>
                                 </li>
                             </ul>
                             <div class="infoHeadline">
@@ -134,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="infoCard">
                         <div class="infoBody">
                             <table class="table performanceTable" cellpadding=0 cellspacing=0
@@ -143,121 +152,124 @@
                                     <h2>Causal Reasoning </h2>
                                 </div>
                                 <td style="width:100%;" align="center" valign="middle">
-                                    <table style="margin:auto" border=1 rules="rows"  frame="hsides">
-                                        
-                                            <tr>
-                                                <th>Rank</th>
-                                                <th>Model</th>
-                                                <th>Accuracy (%)</th>
-                                            </tr>
-                                                <tr class="human-row">
-                                                    <td></td>
-                                                    <td>Human Performance<p class="institution">HIT-SCIR</p>
-                                                        <p nowrap>(Du et al. '22)</p>
-                                                    </td>
-                                                    <td>92</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>1</p><span class="date label label-default">Mar 15,
-                                                            2022</span>
-                                                    </td>
+                                    <table style="margin:auto" border=1 rules="rows" frame="hsides">
 
-                                                    <td style="word-break:break-word;">BERT-base-cased
-                                                        <p class="institution">HIT
-                                                            [modification of the
-                                                            Google AI implementation]</a>
-                                                        </p>
-                                                        <font color="blue">https://aclanthology.org/N19-1423/</font>
-                                                    </td>
-                                                    <td>75.38</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>2</p><span class="date label label-default">Mar 15,
-                                                            2022</span>
-                                                    </td>
-                                                    <td style="word-break:break-word;">ALBERT<p class="institution">
-                                                            HIT [modification of the
-                                                            Google Research implementation]</p>
-                                                        <font color="blue">https://arxiv.org/abs/1909.11942</font>
-                                                    </td>
-                                                    <td>74.60</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>3</p><span class="date label label-default">Mar 15,
-                                                            2022</span>
-                                                    </td>
-                                                    <td style="word-break:break-word;">XLNet-base-cased<p
-                                                            class="institution">
-                                                            HIT [modification of the Google Brain implementation]
-                                                        </p>
-                                                        <font color="blue">
-                                                            https://proceedings.neurips.cc/paper/2019/hash/dc6a7e655d7e5840e66733e9ee67cc69-Abstract.html
-                                                        </font>
-                                                    </td>
-                                                    <td>74.58</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>4</p><span class="date label label-default">Mar 15,
-                                                            2022</span>
-                                                    </td>
-                                                    <td style="word-break:break-word;">BART-base<p class="institution">
-                                                            HIT
-                                                            [modification
-                                                            of the Facebook AI implementation]</p>
-                                                        <font color="blue">
-                                                            https://aclanthology.org/2020.acl-main.703/</font>
-                                                    </td>
-                                                    <td>71.65</td>
-                                                </tr>
-                                                <tr>
+                                        <tr>
+                                            <th>Rank</th>
+                                            <th>Model</th>
+                                            <th>Accuracy (%)</th>
+                                        </tr>
+                                        <tr class="human-row">
+                                            <td></td>
+                                            <td>Human Performance<p class="institution">HIT-SCIR</p>
+                                                <p nowrap>(Du et al., 2022)</p>
+                                            </td>
+                                            <td>92</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>1</p><span class="date label label-default">Mar 15,
+                                                    2022</span>
+                                            </td>
 
-                                                    <td>
-                                                        <p>5</p><span class="date label label-default">Mar 15,
-                                                            2022</span>
-                                                    </td>
-                                                    <td style="word-break:break-word;">RoBERTa-base<p
-                                                            class="institution"> HIT [modification of the
-                                                            Facebook AI implementation]</p>
-                                                        <font color="blue">https://arxiv.org/abs/1907.11692</font>
-                                                    </td>
-                                                    <td>70.73</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>6</p><span class="date label label-default">Mar 15,
-                                                            2022</span>
-                                                    </td>
-                                                    <td style="word-break:break-word;">GPT-2<p class="institution">
-                                                            HIT [modification of the OpenAI implementation]</p>
-                                                        <font color="blue">
-                                                            http://www.persagen.com/files/misc/radford2019language.pdf
-                                                        </font>
-                                                    </td>
-                                                    <td>69.51</td>
-                                                </tr>
+                                            <td style="word-break:break-word;">BERT-base-cased
+                                                <p class="institution">HIT
+                                                    [modification of the
+                                                    Google AI implementation]</a>
+                                                </p>
+                                                <a href="https://aclanthology.org/N19-1423/">(Devlin et al., 2019)</a>
 
-                                                <tr>
-                                                    <td>
-                                                        <p>7</p><span class="date label label-default">Mar 15,
-                                                            2022</span>
-                                                    </td>
-                                                    <td style="word-break:break-word;">GPT<p class="institution">
-                                                            HIT [modification of the OpenAI implementation]</p>
-                                                        <font color="blue">
-                                                            https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdff
-                                                        </font>
+                                            </td>
+                                            <td>75.38</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>2</p><span class="date label label-default">Mar 15,
+                                                    2022</span>
+                                            </td>
+                                            <td style="word-break:break-word;">ALBERT<p class="institution">
+                                                    HIT [modification of the
+                                                    Google Research implementation]</p>
+                                                <a href="https://arxiv.org/abs/1909.11942">(Lan et al., 2019)</a>
 
-                                                    </td>
-                                                    <td>68.15</td>
-                                                </tr>
-                                            
-                                        </table>
+                                            </td>
+                                            <td>74.60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>3</p><span class="date label label-default">Mar 15,
+                                                    2022</span>
+                                            </td>
+                                            <td style="word-break:break-word;">XLNet-base-cased<p class="institution">
+                                                    HIT [modification of the Google Brain implementation]
+                                                </p>
+                                                <a
+                                                    href="https://proceedings.neurips.cc/paper/2019/hash/dc6a7e655d7e5840e66733e9ee67cc69-Abstract.html                                                ">(Yang
+                                                    et al., 2019)</a>
+                                            </td>
+                                            <td>74.58</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>4</p><span class="date label label-default">Mar 15,
+                                                    2022</span>
+                                            </td>
+                                            <td style="word-break:break-word;">BART-base<p class="institution">
+                                                    HIT
+                                                    [modification
+                                                    of the Facebook AI implementation]</p>
+
+                                                <a href="https://aclanthology.org/2020.acl-main.703/">(Lewis et al.,
+                                                    2020)</a>
+                                            </td>
+                                            <td>71.65</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <p>5</p><span class="date label label-default">Mar 15,
+                                                    2022</span>
+                                            </td>
+                                            <td style="word-break:break-word;">RoBERTa-base<p class="institution"> HIT
+                                                    [modification of the
+                                                    Facebook AI implementation]</p>
+
+                                                <a href="https://arxiv.org/abs/1907.11692">(Liu et al., 2019)</a>
+                                            </td>
+                                            <td>70.73</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>6</p><span class="date label label-default">Mar 15,
+                                                    2022</span>
+                                            </td>
+                                            <td style="word-break:break-word;">GPT-2<p class="institution">
+                                                    HIT [modification of the OpenAI implementation]</p>
+                                                <a href="http://www.persagen.com/files/misc/radford2019language.pdf">(Radford
+                                                    et al., 2019)</a>
+                                            </td>
+                                            <td>69.51</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <p>7</p><span class="date label label-default">Mar 15,
+                                                    2022</span>
+                                            </td>
+                                            <td style="word-break:break-word;">GPT<p class="institution">
+                                                    HIT [modification of the OpenAI implementation]</p>
+
+                                                <a
+                                                    href="https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdf">(Radford
+                                                    et al., 2018)</a>
+
+                                            </td>
+                                            <td>68.15</td>
+                                        </tr>
+
+                                    </table>
                                 </td>
-                                    </tr>
+                                </tr>
                             </table>
                         </div>
                     </div>
@@ -265,30 +277,25 @@
 
                     <div class="infoCard">
                         <div class="infoBody">
-
+                            <div class="infoHeadline">
+                                <h2>Conceptual Explanation Generation </h2>
+                            </div>
                             <table class="table performanceTable" cellpadding=0 cellspacing=0
                                 style="width:100% ;height:100%">
-                                <div class="infoHeadline">
-                                    <h2>Conceptual Explanation Generation </h2>
-                                </div>
                                 <tr>
-                                    <td style="width:100%;" align="center" valign="middle">
-                                        <table style="margin:auto"  border=1 rules="rows"  frame="hsides">
+                                    <td style="width:100%" align="center" valign="middle">
+                                        <table style="margin:auto" border=1 rules="rows" frame="hsides" min-width="55%">
                                             <tbody>
                                                 <tr>
                                                     <th>Rank</th>
                                                     <th>Model</th>
-                                                    <th>
-                                                        <nobr>BLEU</nobr>
-                                                    </th>
-                                                    <th>
-                                                        <nobr>Rouge-l</nobr>
-                                                    </th>
+                                                    <th>&nbsp;&nbsp;&nbsp;BLEU&nbsp;&nbsp;&nbsp;</th>
+                                                    <th>&nbsp;&nbsp;&nbsp;Rouge-l&nbsp;&nbsp;&nbsp;</th>
                                                 </tr>
                                                 <tr class="human-row">
                                                     <td></td>
                                                     <td>Human Performance<p class="institution">HIT-SCIR</p>
-                                                        <p nowrap>(Du et al. '22)</p>
+                                                        <p nowrap>(Du et al., 2022)</p>
                                                     </td>
                                                     <td>91.31</td>
                                                     <td>91.69</td>
@@ -300,9 +307,9 @@
                                                     </td>
                                                     <td style="word-break:break-word;">GPT-2<p class="institution">
                                                             HIT [modification of the OpenAI implementation]</p>
-                                                        <font color="blue">
-                                                            http://www.persagen.com/files/misc/radford2019language.pdf
-                                                        </font>
+                                                        <a
+                                                            href="http://www.persagen.com/files/misc/radford2019language.pdf">(Radford
+                                                            et al., 2019)</a>
                                                     </td>
                                                     <td>32.56</td>
                                                     <td>32.05</td>
@@ -314,9 +321,9 @@
                                                     </td>
                                                     <td style="word-break:break-word;">RNN<p class="institution">
                                                             HIT [modification of the LSTM]</p>
-                                                        <font color="blue">
-                                                            https://link.springer.com/chapter/10.1007/978-3-642-24797-2_4
-                                                        </font>
+                                                        <a
+                                                            href="https://link.springer.com/chapter/10.1007/978-3-642-24797-2_4">(Hochreiter
+                                                            and Schmidhuber, 1997)</a>
                                                     </td>
                                                     <td>18.09</td>
                                                     <td>20.85</td>
